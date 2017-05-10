@@ -85,9 +85,9 @@ public:
 };
 ```
 
-###Using the Code
+### Using the Code
 
-```
+```cpp
 int Compress(BYTE *input, int inputlength);   // compress streams, return value is output size
 
 int Decompress(BYTE *input, int inputlength); // decompress streams, return value is output size
