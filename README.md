@@ -7,9 +7,7 @@ The code contain one **public class**  **_simple_Huffman_** in  **_simple_huffma
 
 ##### Main Class
 
-''' 
-Header file
-
+``` cpp
 #include <memory.h>     // memset
 #include <stdlib.h>     // qsort
 typedef unsigned char BYTE;
@@ -85,13 +83,11 @@ public:
                         // to open, -2 output failed, -3 output allocation failed)
 
 };
-'''
+```
 
 ###Using the Code
 
-'''
-Prototypes
-
+```
 int Compress(BYTE *input, int inputlength);   // compress streams, return value is output size
 
 int Decompress(BYTE *input, int inputlength); // decompress streams, return value is output size
@@ -99,4 +95,4 @@ int Decompress(BYTE *input, int inputlength); // decompress streams, return valu
 int CompressFile(char *InFile, char *OutFile);  // compress file directly, return value is output size
 
 int DecompressFile(char *InFile, char *OutFile); // decompress file directly return value is output size
-'''
+```
