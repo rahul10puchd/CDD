@@ -2,12 +2,14 @@
  
  Huffman tree coding is based on prefixes. So there cannot be two different leaves with exact same paths, even more, there must be a path, that ends up only in one leaf (no intersection leaves). Huffman tree coding, furthermore, is based on a frequency or probability of appearance of each one particular symbol. Given this idea, we work with a priority queue, that is initially filled with small trees, each with its symbol/char and probability of appearance/ref.count. We sort our queue/array descending, so most frequent symbols are topmost, while least common are the last. We then merge trees, starting from least one end, going topmost, while merging two trees into one new. After each merging, sorting is performed, so the queue/array is ordered descending again. We do merging, sorting until there is no more than 1 tree in the queue. Then we can finish with tree construction and go to compression, where each symbol is replaced by its path in bits from tree
 
-###Using the Code
-The code contain one **public class** _simple_Huffman_ in _simple_huffman.cpp_.
+### Using the Code
+The code contain one **public class**  **_simple_Huffman_** in  **_simple_huffman.cpp_**.
 
-#####Main Class
+##### Main Class
 
-'''
+''' 
+Header file
+
 #include <memory.h>     // memset
 #include <stdlib.h>     // qsort
 typedef unsigned char BYTE;
@@ -88,6 +90,8 @@ public:
 ###Using the Code
 
 '''
+Prototypes
+
 int Compress(BYTE *input, int inputlength);   // compress streams, return value is output size
 
 int Decompress(BYTE *input, int inputlength); // decompress streams, return value is output size
